@@ -9,6 +9,8 @@
 * [QA](QA.md)
 * [React Developer](REACT_DEVELOPER.md)
 * [WordPress Developer](WORDPRESS_DEVELOPER.md)
+* [GO Developer](GO_DEVELOPER.md)
+* [ML Engineer](ML_ENGINEER.md)
 
 ## Tools and Resources
 * [DevOps Tools](DEVOPS_TOOLS.md)
