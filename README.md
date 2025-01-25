@@ -15,3 +15,5 @@
 ## Tools and Resources
 * [DevOps Tools](DEVOPS_TOOLS.md)
 * [Infrastructure Tools](INFRASTRUCTURE_TOOLS.md)
+* [AI Tools](AI_TOOLS.md)
+* [QA Tools](QA_TOOLS.md)
