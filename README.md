@@ -17,3 +17,6 @@
 * [Infrastructure Tools](INFRASTRUCTURE_TOOLS.md)
 * [AI Tools](AI_TOOLS.md)
 * [QA Tools](QA_TOOLS.md)
+
+## Server Guidelines
+* [Postgres Setup](POSTGRES_SETUP.md)
