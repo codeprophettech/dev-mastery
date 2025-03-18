@@ -150,6 +150,11 @@ sudo chmod +x /usr/local/bin/postgres-backup.sh
 
 ### 2. Transfer Script
 
+Install Required Tools
+```bash
+sudo apt-get install sshpass
+```
+
 Create the file `/usr/local/bin/postgres-transfer.sh`:
 
 ```bash
