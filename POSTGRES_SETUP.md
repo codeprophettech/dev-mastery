@@ -161,6 +161,7 @@ REMOTE_USER="backup-user"
 REMOTE_HOST="backup-server.example.com"
 REMOTE_DIR="/backups/postgres"
 DB_NAME="postgres"
+REMOTE_PASSWORD="your_password_here"  # Hardcoding passwords is not recommended!
 
 # Create log directory if it doesn't exist
 mkdir -p /var/log
@@ -173,8 +174,8 @@ if [ -z "$LATEST_BACKUP" ]; then
   exit 1
 fi
 
-# Transfer the latest backup
-rsync -avz -e "ssh -i /root/.ssh/backup_key" $LATEST_BACKUP $REMOTE_USER@$REMOTE_HOST:$REMOTE_DIR/
+# Transfer the latest backup using sshpass
+sshpass -p "$REMOTE_PASSWORD" rsync -avz -e "ssh" $LATEST_BACKUP $REMOTE_USER@$REMOTE_HOST:$REMOTE_DIR/
 
 if [ $? -ne 0 ]; then
   echo "Remote backup transfer failed!"
